@@ -1,40 +1,36 @@
+function calculateSums() {
+  let a = parseInt(document.getElementById("a").value);
+  let b = parseInt(document.getElementById("b").value);
 
-// For
-let a = 2;
-let b = 10;
-let sum = 0;
+  let sumFor = 0;
+  let sumWhile = 0;
+  let sumDoWhile = 0;
 
-for (let i = a; i <= b; i++) {
-  if (i % 2 === 0) {
-    sum += i;
+  // Используем for
+  for (let i = a; i <= b; i++) {
+    if (i % 2 === 0) {
+      sumFor += i;
+    }
   }
+  console.log(`Сумма четных чисел (for): ${sumFor}`);
+
+  // Используем while
+  let i = a;
+  while (i <= b) {
+    if (i % 2 === 0) {
+      sumWhile += i;
+    }
+    i++;
+  }
+  console.log(`Сумма четных чисел (while): ${sumWhile}`);
+
+  // Используем do while
+  i = a;
+  do {
+    if (i % 2 === 0) {
+      sumDoWhile += i;
+    }
+    i++;
+  } while (i <= b);
+  console.log(`Сумма четных чисел (do while): ${sumDoWhile}`);
 }
-
-console.log(`Сумма четных чисел от ${a} до ${b} равна ${sum}`);
-
-// While
-let j = a;
-let sum2 = 0;
-
-while (j <= b) {
-  if (j % 2 === 0) {
-    sum2 += j;
-  }
-
-  j++;
-}
-
-console.log(`Сумма четных чисел от ${a} до ${b} равна ${sum2}`);
-
-// Do while
-i = a;
-sum = 0;
-
-do {
-  if (i % 2 === 0) {
-    sum += i;
-  }
-  i++;
-} while (i <= b);
-
-console.log(`Сумма четных чисел от ${a} до ${b} равна ${sum}`);
