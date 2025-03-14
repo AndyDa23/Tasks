@@ -1,7 +1,7 @@
-let userName = prompt("Login", '');
+const userName = prompt("Login", '');
 
 if (userName === 'AndyDa23') {
-  let pass = prompt('Password', '');
+  const pass = prompt('Password', '');
 
   if (pass === '0000') {
     alert('Hello! ' + userName);
