@@ -9,17 +9,17 @@ const color = prompt("Введите цвет: red, green, blue");
 const index = checkColor(color);
 
 if (index === 0) {
-    alert("Первый элемент массива");
-    console.log("Первый элемент массива");
+    alert("0");
+    console.log("0");
 } else if (index === 1) {
-    alert("Второй элемент массива");
-    console.log("Второй элемент массива");
+    alert("1");
+    console.log("1");
 } else if (index === 2) {
-    alert("Третий элемент массива");
-    console.log("Третий элемент массива");
+    alert(" 3");
+    console.log("3");
 } else if (index === -1) {
-    alert("Такого цвета нет в массиве");
-    console.log("Такого цвета нет в массиве");
+    alert("-1");
+    console.log("-1");
 } else {
     alert("Ошибка");
     console.log("Ошибка");
