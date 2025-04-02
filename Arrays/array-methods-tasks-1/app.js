@@ -5,6 +5,4 @@ const numbersModifiedArray = document.getElementById('numbersModifiedArray');
 document.getElementById('modifiedArrayButton').addEventListener('click', () => {
     numbers.splice(4, 1, 0, 0, 0);
     numbersModifiedArray.innerHTML = numbers.join(', ');
-    
-   /// numbersModifiedArray.innerHTML = numbers.splice((num, index) => index === 4 || index === 5 || index === 6 ? 0 : num).join(', ');
 });
