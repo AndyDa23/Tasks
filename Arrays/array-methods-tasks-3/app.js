@@ -13,7 +13,7 @@ if (index === 0) {
 } else if (index === 1) {
     alert("1");
 } else if (index === 2) {
-    alert(" 3");
+    alert(" 2");
 } else if (index === -1) {
     alert("-1");
 } else {
