@@ -49,7 +49,6 @@ function posNeg(a) {
     return [pos, neg];
 }
 
-// Тестирование функций
 console.log("Числа меньше 5:", minim(arr));
 console.log("Позиции элементов с максимальными и минимальными значениями:", maxMin(arr));
 console.log("Элементы, превышающие среднее арифметическое:", sr(arr));
