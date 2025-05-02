@@ -1,4 +1,3 @@
-// Создаем объект person
 let person = {
     name: "Person",
     age: 123,
