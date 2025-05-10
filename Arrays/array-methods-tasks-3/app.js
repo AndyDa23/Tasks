@@ -1,0 +1,21 @@
+const colors = ["red", "green", "blue"];
+
+function checkColor(color) {
+    return colors.indexOf(color);
+}
+
+const color = prompt("Введите цвет: red, green, blue");
+
+const index = checkColor(color);
+
+if (index === 0) {
+    alert("0");
+} else if (index === 1) {
+    alert("1");
+} else if (index === 2) {
+    alert(" 2");
+} else if (index === -1) {
+    alert("-1");
+} else {
+    alert("Ошибка");
+}
